@@ -1,7 +1,7 @@
 # vagrant.provision
 Provisioning vagrant box ubuntu/xenial64
 
-This Vagrant script creates a Ubuntu's 64bit 16.04 LTS (ubuntu/xenial64) machine and provide it with a LAMP enviorement with the next actions:
+This Vagrant script creates a Ubuntu's 64bit 16.04 LTS (ubuntu/xenial64) machine and provide it with a LAMP environment with the next actions:
 
 - Install lastest Apache
 - Adds ondrej's repository for the PHP 7
