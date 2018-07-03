@@ -1,4 +1,4 @@
-# vagrant.provision
+# vagrant.provision.xenial64
 Provisioning vagrant box ubuntu/xenial64
 
 This Vagrant script creates a Ubuntu's 64bit 16.04 LTS (ubuntu/xenial64) machine and provide it via owns machine SHELL with a LAMP environment with the next actions:
