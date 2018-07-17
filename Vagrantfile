@@ -29,5 +29,11 @@ Vagrant.configure("2") do |config|
     mv composer.phar /usr/local/bin/composer >> /home/ubuntu/vm_build.log
     echo "Installing git" | tee /home/ubuntu/vm_build.log
     apt-get install -y git >> /home/ubuntu/vm_build.log
+    echo "Creating 2Gb swap" | tee /home/ubuntu/vm_build.log
+    fallocate -l 2G /swapfile
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
   SHELL
 end
