@@ -9,6 +9,7 @@ This Vagrant script creates a Ubuntu's 64bit 16.04 LTS (ubuntu/xenial64) machine
 - Installs latest MySQL indicating the root password on the process
 - Installs composer and makes it global
 - Installs Git
+- Creates a 2Gb swap
 
 Change the default password for the MySQL root user located in the Vagrantfile 
 The local IP for this machine is 192.168.33.177. Change it for your convenience.
