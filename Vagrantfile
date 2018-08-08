@@ -35,5 +35,7 @@ Vagrant.configure("2") do |config|
     mkswap /swapfile
     swapon /swapfile
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+    echo "Enable mod_rewrite" | tee /home/ubuntu/vm_build.log
+    sudo a2enmod rewrite >> /home/ubuntu/vm_build.log
   SHELL
 end
